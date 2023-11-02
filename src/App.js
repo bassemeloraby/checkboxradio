@@ -2,52 +2,41 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { useState } from "react";
 
 function App() {
-  const [cosmotics1, setCosmotics1] = useState("");
-  console.log(cosmotics1);
+  const [checkedValue, setCheckedValue] = useState([]);
+
+  const handleChange = (e) => {
+    // console.log(e.target.checked, "e.target.checked");
+    // console.log(e.target.value, "e.target.value");
+    const { checked, value } = e.target;
+    if (checked) {
+      setCheckedValue((prev) => [...prev, value]);
+    } else
+      setCheckedValue((prev) => {
+        return [...prev.filter((skill) => skill !== value)];
+      });
+  };
+  console.log(checkedValue);
 
   return (
-    <div className="App">
-      <div className="form-check form-check-inline">
-        <input
-          className="form-check-input"
-          type="radio"
-          name="inlineRadioOptions"
-          id="inlineRadio1"
-          value="option1"
-          onChange={(e) => setCosmotics1(e.target.value)}
-        />
-        <label className="form-check-label" htmlFor="inlineRadio1">
-          1
+    <div className="container">
+      <h2>skills</h2>
+      <div>
+        <label className="">
+          <input type="checkbox" value="php" onChange={handleChange} />
+          PHP
+        </label>
+        <br />
+        <label className="">
+          <input type="checkbox" value="js" onChange={handleChange} />
+          JS
+        </label>
+        <br />
+        <label className="">
+          <input type="checkbox" value="react" onChange={handleChange} />
+          REACT
         </label>
       </div>
-      <div className="form-check form-check-inline">
-        <input
-          className="form-check-input"
-          type="radio"
-          name="inlineRadioOptions"
-          id="inlineRadio2"
-          value="option2"
-          onChange={(e) => setCosmotics1(e.target.value)}
-
-        />
-        <label className="form-check-label" htmlFor="inlineRadio2">
-          2
-        </label>
-      </div>
-      <div className="form-check form-check-inline">
-        <input
-          className="form-check-input"
-          type="radio"
-          name="inlineRadioOptions"
-          id="inlineRadio3"
-          value="option3"
-          onChange={(e) => setCosmotics1(e.target.value)}
-
-        />
-        <label className="form-check-label" htmlFor="inlineRadio3">
-          3 (disabled)
-        </label>
-      </div>
+      <div>{checkedValue}</div>
     </div>
   );
 }
