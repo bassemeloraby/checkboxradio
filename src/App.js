@@ -4,6 +4,8 @@ import Home from "./pages/Home";
 import Filter1 from "./pages/Filter1";
 import Filter2 from "./pages/Filter2";
 import Header from "./components/Header";
+import Filter3 from "./pages/Filter3";
+import Filter4and from "./pages/Filter4and";
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/filter1" element={<Filter1 />} />
         <Route path="/filter2" element={<Filter2 />} />
+        <Route path="/filter3" element={<Filter3 />} />
+        <Route path="/filter4" element={<Filter4and />} />
       </Routes>
     </div>
   );

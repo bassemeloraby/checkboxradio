@@ -25,32 +25,32 @@ const Filter2 = () => {
       setUseFilter("");
       setOpenCompany(true);
       setOpenUse(false);
-      const filterdata = productDb.filter((c) =>
+      const filterData = productDb.filter((c) =>
         c.Company?.includes(companyFilter)
       );
 
-      setItems(filterdata);
+      setItems(filterData);
     }
     if (filterKind === "use") {
       setCompanyFilter("");
       setOpenCompany(false);
       setOpenUse(true);
-      const filterdata = productDb.filter(
+      const filterData = productDb.filter(
         (c) => c.use1?.includes(useFilter) || c.use2?.includes(useFilter)
       );
 
-      setItems(filterdata);
+      setItems(filterData);
     }
     if (filterKind === "all") {
       setOpenCompany(true);
       setOpenUse(true);
-      const filterdata = productDb.filter(
+      const filterData = productDb.filter(
         (c) =>
           c.Company?.includes(companyFilter) &&
           (c.use1?.includes(useFilter) || c.use2?.includes(useFilter))
       );
 
-      setItems(filterdata);
+      setItems(filterData);
     }
   }, [filterKind, companyFilter, useFilter]);
 
