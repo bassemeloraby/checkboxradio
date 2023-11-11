@@ -19,6 +19,9 @@ const Header = () => {
       <Link to="/filter4" className=" btn btn-primary">
         and
       </Link>
+      <Link to="/cuisine" className=" btn btn-primary">
+      Cuisine
+      </Link>
     </div>
   );
 };
