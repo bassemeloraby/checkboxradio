@@ -31,7 +31,10 @@ const Cuisine = () => {
           cuisinesChecked.includes(item.cuisine)
         );
         setList(updatedList);
+      }else{
+        setList(dataList)
       }
+
     };
     applyFilters();
   }, [cuisines]);
