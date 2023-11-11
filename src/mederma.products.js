@@ -38,7 +38,7 @@ export const productDb = [
     companyCategory1: "ATODERM",
     use1: "Cleanser",
     usedArea1: "Body",
-    skinSenstivety: "Senstive",
+    skinSenstivety: true,
     normalSkin: "Normal",
     drySkin: "Dry",
     combinationSkin: "",
@@ -61,7 +61,7 @@ export const productDb = [
     companyCategory1: "ATODERM",
     use1: "Moisturization",
     usedArea1: "Body",
-    skinSenstivety: "Senstive",
+    skinSenstivety: true,
     normalSkin: "Normal",
     drySkin: "Dry",
     form: "cream",
@@ -93,7 +93,7 @@ export const productDb = [
     intBarcode: "3701129802069",
     irritatedSkin: "Irritated",
     price: "125.35",
-    skinSenstivety: "Senstive",
+    skinSenstivety: true,
   },
   {
     _id: {
@@ -125,7 +125,7 @@ export const productDb = [
     companyCategory1: "SENSIBIO",
     use1: "Cleanser",
     usedArea1: "Face",
-    skinSenstivety: "Senstive",
+    skinSenstivety: true,
     normalSkin: "Normal",
     intBarcode: "3401345935571",
     picLink:
@@ -149,7 +149,7 @@ export const productDb = [
     picLink:
       "https://www.bioderma.sa/sites/sa/files/styles/ultrawide_product_list_thumbnail/public/products/%7B37237%7D_%7BBIO_ATODERM_LEVRES%7D_%7B28098B%7D.png?itok=MtTfrVbG",
     price: "67.85",
-    skinSenstivety: "Senstive",
+    skinSenstivety: true,
     updatedAt: {
       $date: "2023-10-31T10:28:31.373Z",
     },
@@ -185,7 +185,7 @@ export const productDb = [
     companyCategory1: "SENSIBIO",
     use1: "Cleanser",
     usedArea1: "Face",
-    skinSenstivety: "Senstive",
+    skinSenstivety: true,
     normalSkin: "Normal",
     form: "solution",
     picLink:
@@ -227,7 +227,7 @@ export const productDb = [
     picLink:
       "https://www.bioderma.ae/sites/ae/files/styles/large/public/products/%7B37252%7D_%7BBIO_ATODERM_BAUME_LEVRES%7D_%7B28095W%7D.png?itok=i6L-Yh92",
     price: "125.35",
-    skinSenstivety: "Senstive",
+    skinSenstivety: true,
     atopicSkin: "Atopic",
     normalSkin: "",
     oilySkin: "",
@@ -252,7 +252,7 @@ export const productDb = [
     normalSkin: "Normal",
     picLink:
       "https://www.bioderma.sa/sites/sa/files/styles/large/public/products/%7B84973%7D_%7B%7D_%7B28119S%7D.png?itok=SlaWfBSo",
-    skinSenstivety: "Senstive",
+    skinSenstivety: true,
     updatedAt: {
       $date: "2023-10-31T17:27:18.406Z",
     },
@@ -267,7 +267,7 @@ export const productDb = [
     companyCategory1: "SENSIBIO",
     use1: "Cleanser",
     usedArea1: "Body",
-    skinSenstivety: "Senstive",
+    skinSenstivety: true,
     form: "gel",
     picLink:
       "https://www.bioderma.sa/sites/sa/files/styles/ultrawide_product_list_thumbnail/public/products/%7B40330%7D_%7BBIO_SENSIBIO_GEL_MOUSSANT%7D_%7B28727%7D.png?itok=WyVo5A68",
@@ -295,7 +295,7 @@ export const productDb = [
     picLink:
       "https://www.bioderma.sa/sites/sa/files/styles/ultrawide_product_list_thumbnail/public/products/%7B37996%7D_%7BBIO_PIGMENTBIO_FOAMING_CREAM%7D_%7B28912B%7D.png?itok=4UhekCy-",
     price: "125.35",
-    skinSenstivety: "Senstive",
+    skinSenstivety: true,
     updatedAt: {
       $date: "2023-10-31T10:21:43.032Z",
     },
@@ -313,7 +313,7 @@ export const productDb = [
     companyCategory1: "SENSIBIO",
     use1: "Cleanser",
     usedArea1: "Face",
-    skinSenstivety: "Senstive",
+    skinSenstivety: true,
     normalSkin: "Normal",
   },
   {
@@ -355,7 +355,7 @@ export const productDb = [
     companyCategory1: "SENSIBIO",
     use1: "Pigmentation",
     usedArea1: "Eye",
-    skinSenstivety: "Senstive",
+    skinSenstivety: true,
     picLink:
       "https://www.bioderma.ae/sites/ae/files/styles/large/public/products/%7B40291%7D_%7B%7D_%7B28692%7D.png?itok=JfPCaDNh",
     updatedAt: {
@@ -382,7 +382,7 @@ export const productDb = [
     picLink:
       "https://www.bioderma.co.uk/sites/uk/files/styles/large/public/products/%7B86383%7D_%7BBIO_PHOTODERM_AQUAFLUIDE_SPF50_V2_RELAUNCH%7D_%7B28575E%7D.png?itok=8wqRgvGa",
     price: "156.40",
-    skinSenstivety: "Senstive",
+    skinSenstivety: true,
     updatedAt: {
       $date: "2023-10-30T07:04:59.680Z",
     },
@@ -396,7 +396,7 @@ export const productDb = [
     companyCategory1: "ATODERM",
     use1: "Cleanser",
     usedArea1: "Body",
-    skinSenstivety: "Senstive",
+    skinSenstivety: true,
     drySkin: "Dry",
     form: "gel",
     picLink:
@@ -428,7 +428,7 @@ export const productDb = [
     companyCategory1: "ATODERM",
     use1: "Moisturization",
     usedArea1: "Body",
-    skinSenstivety: "Senstive",
+    skinSenstivety: true,
     normalSkin: "Normal",
     drySkin: "Dry",
     picLink:
@@ -518,7 +518,7 @@ export const productDb = [
     companyCategory1: "SENSIBIO",
     use1: "Moisturization",
     usedArea1: "Body",
-    skinSenstivety: "Senstive",
+    skinSenstivety: true,
   },
   {
     _id: {
@@ -599,7 +599,7 @@ export const productDb = [
     companyCategory1: "SENSIBIO",
     use1: "Moisturization",
     usedArea1: "Body",
-    skinSenstivety: "Senstive",
+    skinSenstivety: true,
     form: "cream",
     picLink:
       "https://www.bioderma.sa/sites/sa/files/styles/ultrawide_product_list_thumbnail/public/products/%7B40312%7D_%7BBIO_SENSIBIO_FORTE%7D_%7B28691%7D.png?itok=NrIPiBih",
@@ -625,7 +625,7 @@ export const productDb = [
     picLink:
       "https://www.bioderma.sa/sites/sa/files/styles/ultrawide_product_list_thumbnail/public/products/%7B86383%7D_%7BBIO_PHOTODERM_AQUAFLUIDE_SPF50_V2_RELAUNCH%7D_%7B28575E%7D.png?itok=qFDYtZr7",
     price: "156.4",
-    skinSenstivety: "Senstive",
+    skinSenstivety: true,
     updatedAt: {
       $date: "2023-10-31T10:34:52.567Z",
     },
@@ -696,7 +696,7 @@ export const productDb = [
     picLink:
       "https://www.bioderma.sa/sites/sa/files/styles/ultrawide_product_list_thumbnail/public/products/%7B38050%7D_%7BBIO_PIGMENTBIO_SENSITIVE_AREAS%7D_%7B28918%7D.png?itok=ilMFnrqE",
     price: "194.35",
-    skinSenstivety: "Senstive",
+    skinSenstivety: true,
     updatedAt: {
       $date: "2023-10-31T10:22:56.404Z",
     },
@@ -712,7 +712,7 @@ export const productDb = [
     companyCategory1: "ATODERM",
     use1: "Moisturization",
     usedArea1: "Body",
-    skinSenstivety: "Senstive",
+    skinSenstivety: true,
     normalSkin: "Normal",
     drySkin: "Dry",
     form: "cream",
@@ -757,7 +757,7 @@ export const productDb = [
     picLink:
       "https://www.bioderma.sa/sites/sa/files/styles/ultrawide_product_list_thumbnail/public/products/%7B83692%7D_%7BBIO_PHOTODERM_LAIT_ULTRA_SPF50_RELAUNCH%7D_%7B28560F%7D.png?itok=cgArwNtp",
     price: "201.25",
-    skinSenstivety: "Senstive",
+    skinSenstivety: true,
     updatedAt: {
       $date: "2023-10-31T10:31:13.275Z",
     },
@@ -780,7 +780,7 @@ export const productDb = [
     picLink:
       "https://www.bioderma.sa/sites/sa/files/styles/ultrawide_product_list_thumbnail/public/products/%7B83011%7D_%7BBIO_PHOTODERM_CREME_SPF50_V2_RELAUNCH%7D_%7B28540D%7D.png?itok=PNahDb-a",
     price: "148.35",
-    skinSenstivety: "Senstive",
+    skinSenstivety: true,
     updatedAt: {
       $date: "2023-10-31T10:32:55.904Z",
     },
@@ -817,7 +817,7 @@ export const productDb = [
     companyCategory1: "SENSIBIO",
     use1: "Cleanser",
     usedArea1: "Face",
-    skinSenstivety: "Senstive",
+    skinSenstivety: true,
     normalSkin: "Normal",
   },
   {
@@ -1041,7 +1041,7 @@ export const productDb = [
     picLink:
       "https://images-as.eucerin.com/~/media/eucerin%20relaunch%20media/media-center-items/d/8/9/09c149c46d3b4587a3606579df1ea068-screen.webp?rx=0&ry=0&rw=1200&rh=1200&mw=405&hash=8D1ED656A451BB9D0EDF8CDE32EDA356",
     price: "150.65",
-    skinSenstivety: "Senstive",
+    skinSenstivety: true,
     updatedAt: {
       $date: "2023-10-31T10:52:31.145Z",
     },
@@ -1069,7 +1069,7 @@ export const productDb = [
     picLink:
       "https://images-as.eucerin.com/~/media/eucerin%20relaunch%20media/media-center-items/9/a/3/b57e89d994c94f94847ee660852b491b-screen.webp?rx=237&ry=0&rw=1126&rh=1126&mw=350&hash=64237CD07AAC7D3BDA082E524E9C0A1C",
     price: "263.35",
-    skinSenstivety: "Senstive",
+    skinSenstivety: true,
     updatedAt: {
       $date: "2023-10-31T11:00:20.286Z",
     },

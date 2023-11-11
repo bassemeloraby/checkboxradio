@@ -3,7 +3,6 @@ import { productDb } from "../mederma.products";
 import { CompanyDb, useDb } from "../CosmoticData";
 import { Form } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
-import Skinkind from "../components/filter4and/Skinkind";
 
 const Filter4and = () => {
   const [items, setItems] = useState([]);
@@ -69,13 +68,11 @@ const Filter4and = () => {
                 ))}
               </Form.Select>
             </Form.Group>
-            {/*-----skinkind----- */}
-            <Skinkind/>
           </div>
         </section>
         {/*--------mainbar------ */}
         <section className="2 main col-10 ">
-          <div className="bg-warning d-flex justify-content-around col-6">
+          <div className="bg-warning d-flex justify-content-around col-8">
             <span> items count : {items.length} </span>
             <span> Company: {companyFilter} </span>
             <span> Use: {useFilter}</span>
@@ -83,9 +80,12 @@ const Filter4and = () => {
           <div className="bg-success">
             {" "}
             {items.map((p, i) => (
-              <h5 key={i} className="ms-1">
-                {p.Description}
-              </h5>
+              <div key={i} className="ms-1 d-flex">
+                <h5>
+                  {p.Description} <br />
+                </h5>
+                <input type="checkbox" defaultValue={p.skinSenstivety} />
+              </div>
             ))}
           </div>
           <div className="d-flex justify-content-center">
