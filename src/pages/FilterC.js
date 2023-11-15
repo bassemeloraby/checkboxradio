@@ -1,20 +1,14 @@
 import React, { useEffect, useState } from "react";
-import { dataList } from "../data/cuisine";
-const Cuisine = () => {
-  // checkbox values
-  const [cuisines, setCuisines] = useState([
-    { id: 1, checked: false, label: "American" },
-    { id: 2, checked: false, label: "Chinese" },
-    { id: 3, checked: false, label: "Italian" },
-  ]);
-//all data
-  const [list, setList] = useState(dataList);
+import { productDb } from "../mederma.products";
+import { CompanyDb } from "../CosmoticData";
+// import { dataList } from "../data/cuisine";
 
-  // function for handle change in checked boxes
+const FilterC = () => {
+  const [cuisines, setCuisines] = useState(CompanyDb);
+  const [list, setList] = useState(productDb);
+
   const handleChangeChecked = (id) => {
-    // declear const equal to   // checkbox values
     const cusinesStateList = cuisines;
-    
     const changeCheckedCuisines = cusinesStateList.map((item) =>
       item.id === id ? { ...item, checked: !item.checked } : item
     );
@@ -23,31 +17,34 @@ const Cuisine = () => {
 
   useEffect(() => {
     const applyFilters = () => {
-      let updatedList = dataList;
+      let updatedList = productDb;
 
       // Cuisine Filter
       const cuisinesChecked = cuisines
         .filter((item) => item.checked)
-        .map((item) => item.label.toLowerCase());
+        .map((item) => item.name);
 
       if (cuisinesChecked.length) {
         updatedList = updatedList.filter((item) =>
-          cuisinesChecked.includes(item.cuisine)
+          cuisinesChecked.includes(item.Company)
         );
         setList(updatedList);
       }else{
-        setList(dataList)
+        setList(productDb)
       }
 
     };
     applyFilters();
   }, [cuisines]);
 
+
   console.log(cuisines);
+  console.log(list,"list");
+  // console.log(dataList);
+  // console.log(dataList);
   return (
     <div>
-      {" "}
-      <h1>Cuisine</h1>
+      <h2>FilterC</h2>
       <section className="d-flex">
         <div className="1 sidebar col-4">
           sidebar
@@ -59,14 +56,14 @@ const Cuisine = () => {
                 onChange={() => handleChangeChecked(c.id)}
                 className="me-1"
               />
-              <span>{c.label}</span>
+              <span>{c.name}</span>
             </label>
           ))}
         </div>
         <div className="2 mainbar">
           {" "}
           {list.map((p, i) => (
-            <h6 key={i}>{p.cuisine}</h6>
+            <h6 key={i}>{p.Company}</h6>
           ))}
         </div>
       </section>
@@ -74,4 +71,4 @@ const Cuisine = () => {
   );
 };
 
-export default Cuisine;
+export default FilterC;

@@ -7,6 +7,7 @@ import Header from "./components/Header";
 import Filter3 from "./pages/Filter3";
 import Filter4and from "./pages/Filter4and";
 import Cuisine from "./pages/Cuisine";
+import FilterC from "./pages/FilterC";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/filter3" element={<Filter3 />} />
         <Route path="/filter4" element={<Filter4and />} />
         <Route path="/cuisine" element={<Cuisine />} />
+        <Route path="/filterC" element={<FilterC />} />
       </Routes>
     </div>
   );

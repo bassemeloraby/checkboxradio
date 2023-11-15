@@ -45,12 +45,14 @@ export const CompanyDb = [
   {
     id: 1,
     name: "BIODERMA",
-    ourPro:'https://www.bioderma.sa/our-products/'
+    checked: false,
+    ourPro: "https://www.bioderma.sa/our-products/",
   },
   {
     id: 2,
     name: "EUCERIN",
-    ourPro:'https://www.en.eucerin-me.com/products/'
+    checked: false,
+    ourPro: "https://www.en.eucerin-me.com/products/",
   },
 ];
 
@@ -122,19 +124,19 @@ export const companyCategoryDb = [
 ];
 
 export const compProTypeDb = [
-  {name:"intensive-baume"},
-  {name:"baume-levres"},
-  {name:"creme"},
-  {name:"gel-douche"},
-  {name:"huile-de-douche"},
-  {name:"intensive-gel-moussant"},
-  {name:"intensive-pain"},
-  {name:"mains-ongles"},
-  {name:"nutritive"},
-  {name:"sos-spray"},
-  {name:"stick-levres"},
-  {name:"aquafluide-spf50"},
-]
+  { name: "intensive-baume" },
+  { name: "baume-levres" },
+  { name: "creme" },
+  { name: "gel-douche" },
+  { name: "huile-de-douche" },
+  { name: "intensive-gel-moussant" },
+  { name: "intensive-pain" },
+  { name: "mains-ongles" },
+  { name: "nutritive" },
+  { name: "sos-spray" },
+  { name: "stick-levres" },
+  { name: "aquafluide-spf50" },
+];
 
 export const formDb = [
   {

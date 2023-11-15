@@ -22,6 +22,9 @@ const Header = () => {
       <Link to="/cuisine" className=" btn btn-primary">
       Cuisine
       </Link>
+      <Link to="/filterC" className=" btn btn-success">
+      Filter Cuisine
+      </Link>
     </div>
   );
 };
