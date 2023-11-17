@@ -28,6 +28,6 @@ code {
   border: 1px solid black;
 }
 .img1:hover{
-  transform:scale(2.5);
+  transform:scale(2.5) translate(50%, 20%);
   z-index: 1;
 }

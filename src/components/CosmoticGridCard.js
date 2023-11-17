@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 const CosmoticGridCard = ({prod}) => {
   return (
-    <div className='col-3'>
+    <div className='col-4 border border-primary p-1 rounded-1 '>
       <Card.Title>{prod.Description}</Card.Title>
       <div className="div-img mb-2">
         {prod.picLink ? (

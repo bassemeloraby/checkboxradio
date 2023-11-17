@@ -69,9 +69,9 @@ const InfiniteScrollExample = () => {
 
   return (
     <div>
-      <h2>CosmoticSF unfinite scroll</h2>
+      <h2>CosmoticSF infinite scroll</h2>
       <section className="d-flex">
-        <div className="1-sb col-2 border-end  border-warning">
+        <div className="1-sb col-2 border-end  border-warning" >
           {companies.map((c, i) => (
             <label className="me-2 d-flex" key={i}>
               <input
@@ -93,9 +93,9 @@ const InfiniteScrollExample = () => {
             loader={<p>Loading...</p>}
             endMessage={<p>No more data to load.</p>}
           >
-            <div className="d-flex container flex-wrap">
+            <div className="d-flex container flex-wrap justify-content-between">
               {list.map((item, i) => (
-                <CosmoticGridCard prod={item} key={i}/>
+                <CosmoticGridCard prod={item} key={i} />
               ))}
             </div>
           </InfiniteScroll>
