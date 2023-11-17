@@ -20,10 +20,13 @@ const Header = () => {
         and
       </Link>
       <Link to="/cuisine" className=" btn btn-primary">
-      Cuisine
+        Cuisine
       </Link>
       <Link to="/filterC" className=" btn btn-success">
-      Filter Cuisine
+        Filter Cuisine
+      </Link>
+      <Link to="/cosmoticSF" className=" btn btn-success">
+        cosmoticSF{" "}
       </Link>
     </div>
   );

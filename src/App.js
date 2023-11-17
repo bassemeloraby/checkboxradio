@@ -8,6 +8,7 @@ import Filter3 from "./pages/Filter3";
 import Filter4and from "./pages/Filter4and";
 import Cuisine from "./pages/Cuisine";
 import FilterC from "./pages/FilterC";
+import CosmoticSF from "./pages/CosmoticSF";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/filter4" element={<Filter4and />} />
         <Route path="/cuisine" element={<Cuisine />} />
         <Route path="/filterC" element={<FilterC />} />
+        <Route path="/cosmoticSF" element={<CosmoticSF />} />
       </Routes>
     </div>
   );
