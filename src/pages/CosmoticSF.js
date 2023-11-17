@@ -1,30 +1,12 @@
 import React, { useState } from "react";
 import { productDb } from "../mederma.products";
 import { CompanyDb } from "../CosmoticData";
-
-// react-window
-import { VariableSizeGrid as Grid } from 'react-window';
-
-// These item sizes are arbitrary.
-// Yours should be based on the content of the item.
-const columnWidths = new Array(1000)
-  .fill(true)
-  .map(() => 75 + Math.round(Math.random() * 50));
-const rowHeights = new Array(1000)
-  .fill(true)
-  .map(() => 25 + Math.round(Math.random() * 50));
- 
-  const Cell = ({ columnIndex, rowIndex, style }) => (
-    <div style={style}>
-      Item {rowIndex},{columnIndex}
-    </div>
-  );
-   
- 
+import { FixedSizeList } from "react-window";
+import { faker } from "@faker-js/faker";
 
 const CosmoticSF = () => {
   const [companies, setCompanies] = useState(CompanyDb);
-//   const [list, setList] = useState(productDb);
+  //   const [list, setList] = useState(productDb);
 
   const handleChangeChecked = (id) => {
     const cusinesStateList = companies;
@@ -32,6 +14,31 @@ const CosmoticSF = () => {
       item.id === id ? { ...item, checked: !item.checked } : item
     );
     setCompanies(changeCheckedCuisines);
+  };
+
+  const data = productDb;
+
+  const Row = ({ index, style }) => {
+    const isEvenRow = index % 2 === 0;
+    const backgroundColor = isEvenRow ? "#F9A03F" : "#FDDB3A";
+    const textColor = isEvenRow ? "#FFFFFF" : "#4A4A4A";
+    const rowStyle = {
+      ...style,
+      backgroundColor,
+      color: textColor,
+      display: "flex",
+      justifyContent: "space-between",
+      alignItems: "center",
+      padding: "0 16px",
+    };
+    return (
+      <section >
+        <div style={rowStyle}>
+          <p>{data[index].Company}</p>
+          <p>{data[index].Description}</p>
+        </div>
+      </section>
+    );
   };
 
   return (
@@ -52,17 +59,15 @@ const CosmoticSF = () => {
           ))}
         </div>
         <div className="2-mb ps-1">
-        <Grid
-        columnCount={1000}
-        columnWidth={index => columnWidths[index]}
-        height={1000}
-        rowCount={1000}
-        rowHeight={index => rowHeights[index]}
-        width={1000}
-        
-      >
-        {Cell}
-      </Grid>
+          <FixedSizeList
+            height={600}
+            width={1100}
+            itemSize={50}
+            itemCount={data.length}
+          >
+            {Row}
+          </FixedSizeList>
+          
         </div>
       </section>
     </div>
