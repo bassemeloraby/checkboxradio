@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { productDb } from "../mederma.products";
 import { CompanyDb } from "../CosmoticData";
 import { FixedSizeList } from "react-window";
-import { faker } from "@faker-js/faker";
 
 const CosmoticSF = () => {
   const [companies, setCompanies] = useState(CompanyDb);

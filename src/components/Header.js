@@ -28,6 +28,9 @@ const Header = () => {
       <Link to="/cosmoticSF" className=" btn btn-success">
         cosmoticSF{" "}
       </Link>
+      <Link to="/cosmoticGrid" className=" btn btn-success">
+      CosmoticGrid{" "}
+      </Link>
     </div>
   );
 };
